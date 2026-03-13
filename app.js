@@ -13,7 +13,10 @@ const app = express();
 const upload = multer({ dest: 'uploads/' });
 
 // Middleware
-app.use(cors({ origin: 'http://localhost:8000', credentials: true }));
+app.use(cors({
+  origin: '*',
+  credentials: true
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
