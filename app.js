@@ -164,7 +164,9 @@ app.get('/files', authenticateToken, async (req, res) => {
     res.json({ files, message: `Retrieved ${files.length} files` });
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Backend Server running on port ${PORT}`);
 });
