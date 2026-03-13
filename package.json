@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "description": "Medical storage with authentication",
   "main": "app.js",
-"scripts": {
-  "start": "node app.js",
-  "test": "echo \"No tests needed\""
-},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"No tests needed\""
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "@azure/identity": "^4.0.0",
     "@azure/storage-blob": "^12.0.0",
